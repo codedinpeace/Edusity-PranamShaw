@@ -1,5 +1,4 @@
 import React from 'react'
-import AboutVideo from '../assets/college-video-6XtGR-D3.mp4'
 import AboutImg from '../assets/about.png'
 import PlayBtn from '../assets/play-icon.png'
 import { useGSAP } from '@gsap/react'
@@ -8,7 +7,7 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger);
 
-const About = () => {
+const About = ({setPlayState}) => {
     useGSAP(()=>{
         const tl = gsap.timeline()
         tl.from(".About",{
@@ -32,7 +31,7 @@ const About = () => {
             {/* <video src={AboutVideo} className='w-50 h-50'></video> */}
             <div className='relative mt-5'>
             <img src={AboutImg} className=' w-130 max-lg:w-90 rounded-2xl ' alt="" />
-        <img src={PlayBtn} className='w-20 max-lg:w-10 absolute top-[50%] left-[45%] right-[50%] bottom-[50%]' alt="" />
+        <img src={PlayBtn} onClick={()=>{setPlayState(true)}} className='w-20 max-lg:w-10 absolute top-[50%] left-[45%] right-[50%] bottom-[50%]' alt="" />
         </div>
              <div className='grid'> 
             <h1 className='text-blue-800 text-xl max-xl:mx-auto  '>ABOUT UNIVERSITY

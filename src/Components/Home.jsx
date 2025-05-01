@@ -7,19 +7,23 @@ import Campus from './Campus'
 import Testimonials from './Testimonials'
 import Contact from './Contact'
 import Footer from './Footer'
+import { VideoPlayer } from './VideoPlayer'
 
 
-const Home = () => {
+const Home = ({setPlayState, playState}) => {
   return (
     <div>
         <Navbar />
         <Hero />
         <Program />
-        <About />
+        <About setPlayState={setPlayState}/>
         <Campus />
         <Testimonials />
         <Contact />
         <Footer />
+        <div>
+          <VideoPlayer setPlayState={setPlayState} playState={playState} />
+        </div>
     </div>
   )
 }
