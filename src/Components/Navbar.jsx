@@ -100,7 +100,7 @@ const Navbar = () => {
                 <a className='hover:text-gray-300' href="#About">About Us</a>
                 <a className='hover:text-gray-300' href="#Campus">Campus</a>
                 <a  className='hover:text-gray-300'href="#TestiMonials">TestiMonials</a>
-                <button className='bg-white px-5 py-2 border-2 border-white cursor-pointer rounded-full text-black hover:border-2 hover:border-white hover:bg-transparent hover:text-white'>Contact Us</button>
+                <a href="#Contact"><button className='bg-white px-5 py-2 border-2 border-white cursor-pointer rounded-full text-black hover:border-2 hover:border-white hover:bg-transparent hover:text-white'>Contact Us</button></a>
             </div>
         </div>
 

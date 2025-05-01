@@ -7,10 +7,13 @@ import arrow from '../assets/white-arrow.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useNavigate } from 'react-router-dom'
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Campus = () => {
+
+  const navigate = useNavigate()
 
   const tl = gsap.timeline()
 
@@ -28,7 +31,7 @@ const Campus = () => {
             <img src={Campus4} className='Campus4 w-90 max-lg:w-70 border-0 rounded-2xl  hover:scale-110 transition-all duration-300 cursor-pointer ' alt="" />
         </div>
         <div className='flex justify-center mt-10'>
-            <button className='flex gap-3 text-[16px] bg-blue-800 text-white px-10 py-3 border-2 border-blue-800 rounded-full hover:bg-transparent hover:text-black transition-all duration-150 cursor-pointer group'>See more here <img src={arrow} className='w-5 h-3 items-center mt-2.5 group-hover:invert-100' alt="" /></button>
+            <button onClick={()=>navigate("/MorePhotos")} className='flex gap-3 text-[16px] bg-blue-800 text-white px-10 py-3 border-2 border-blue-800 rounded-full hover:bg-transparent hover:text-black transition-all duration-150 cursor-pointer group'>See more here <img src={arrow} className='w-5 h-3 items-center mt-2.5 group-hover:invert-100' alt="" /></button>
         </div>
     </div>
   )

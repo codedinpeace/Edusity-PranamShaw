@@ -1,19 +1,21 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
-import Hero from './Components/Hero'
-import Program from './Components/Program'
-import About from './Components/About'
-import Campus from './Components/Campus'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import MorePhotos from './Components/MorePhotos'
+import { Routes, Route } from 'react-router-dom';
+import Home from './Components/Home';
 
 const App = () => {
   return (
     <div className="">
-      <Navbar/>
-      <Hero/>
-      <Program/>
-      <About/>
-      <Campus/> 
+      <ToastContainer position="top-right" 
+       autoClose={3000}
+       />
+       
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+        <Route path='/MorePhotos' element={<MorePhotos/>}/>
+      </Routes>
     </div>
   )
 }

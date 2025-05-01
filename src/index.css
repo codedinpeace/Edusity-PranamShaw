@@ -31,3 +31,66 @@ body{
   background: rgba(63, 62, 62, 0.322);
 }
 
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;  
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 75%;
+  height: 65%;
+}
+
+.swiper-slide {
+  padding: 50px 50px 30px 50px;
+  font-size: 18px;
+  background: #eeebebb0;
+  /* Center slide text vertically */
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.mySwiper img{
+  width: 69px;
+  border-radius: 50%;
+  border: 3px solid rgb(41, 41, 250);
+  display: flex;
+}
+
+.Parent{
+  column-width: 150px;
+}
+
+.img{
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.img:hover{
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
