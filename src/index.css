@@ -8,7 +8,7 @@
   user-select: none;
 }
 
-body{
+body, html{
   background-repeat: no-repeat;
   
   /* margin-left: 10%;
