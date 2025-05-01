@@ -42,8 +42,8 @@ const Contact = () => {
         <h1 className='text-4xl mx-auto font-medium'>Get In Touch</h1>
       </div>
       <div className='flex justify-evenly max-lg:flex-col max-lg:justify-center max-lg:items-center'>
-        <div className=''>
-          <div className='flex gap-5 mt-20'>
+          <div className=''>
+            <div className='flex gap-5 mt-20'>
             <h1 className='text-3xl font-medium'>Send us a message</h1>
             <img src={Msg} alt="" className='w-10' />
           </div>
@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
             <div className='flex gap-3 mt-3'>
               <img src={location} alt="" className='w-7' />
-              <p><p className='text-[20px] items-center text-gray-600'>400 Campus Drive Springfield, IL 62703,USA</p></p>
+              <p><p className='text-[20px] items-center text-gray-600 '>400 SpringField Drive</p></p>
             </div>
             <div>
               

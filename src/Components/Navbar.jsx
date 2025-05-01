@@ -112,7 +112,7 @@ const Navbar = () => {
                 </div>
                 <div>
             <div className='lg:hidden flex flex-col gap-3 '>
-                <div className={`Navbar flex flex-col gap-3 ml-auto ${isVisible ? "absolute" : "fixed"}  p-10 h-screen w-[50%] text-white  top-0  left-[100%] z-50`}>
+                <div className={`Navbar flex flex-col gap-3 ml-auto ${isVisible ? "absolute" : ""} fixed p-10 h-screen w-[50%] text-white  top-0  left-[100%] z-50`}>
             <a href="#Home">Home</a>
                 <a className='hover:text-gray-300' onClick={()=>setIsVisible(false)} href="#Program">Program</a> 
                 <a className='hover:text-gray-300' onClick={()=>setIsVisible(false)} href="#About">About Us</a>
